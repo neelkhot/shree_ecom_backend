@@ -6,7 +6,7 @@ const app = express();
 const dotenv = require("dotenv").config();
 require("dotenv").config({ path: __dirname + "/config/config.env" });
 
-const PORT = 5000;
+const PORT = process.env.PORT;
 const authRouter = require("./routes/authRoute");
 const productRouter = require("./routes/productRoute");
 const blogRouter = require("./routes/blogRoute");
