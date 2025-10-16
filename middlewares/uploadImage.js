@@ -40,7 +40,7 @@ const productImgResize = async (req, res, next) => {
   );
   next();
 };
-
+//push restart
 const blogImgResize = async (req, res, next) => {
   if (!req.files) return next();
   await Promise.all(
